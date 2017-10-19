@@ -17,8 +17,10 @@
         .content { min-height: 30px; }
         .content.b { background-color: blue; flex-grow: 1;}
         .content.r { background-color: red; width: 100px; margin-left: 10px; }
-        .content.self { background-color: green; flex-grow: 1; }
-        .content.self::after { content: "."; width: 100px; margin-left: 10px; background-color: yellow; }
+        .content.g1 { background-color: green; flex-grow: 1; }
+        .content.g2 { background-color: yellow; flex-grow: 1; display: flex; }
+        .g3 { background: brown; flex-grow: 1; }
+        .g4 { background: peru; flex-grow: 1; }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -29,7 +31,11 @@
     <button class="content r">R</button>
 </div>
 <div class="wrap">
-    <div class="content self">self</div>
+    <div class="content g1">G1</div>
+    <div class="content g2">
+        <div class="content g3">G3</div>
+        <div class="content g4">G4</div>
+    </div>
 </div>
 </body>
 <html>

@@ -144,6 +144,11 @@ body.slide-active {
     opacity: .5;
 }
 
+input.form-control {
+    height: 40px;
+    border-radius: 0;
+}
+
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 @media (max-width: 767px) {
     .navbar-brand {
@@ -257,11 +262,18 @@ body.slide-active {
 }
 
 /* component - button */
+.btn {
+    font-size: 18px;
+    min-width: 100px;
+    line-height: 25px;
+}
+
 .btn-cancel {
+    font-size: 18px;
     color: #fff;
-    background-color: #666;
+    background-color: #686868;
     box-shadow: none;
-    border: 1px solid black;
+    border: 1px solid 686868;
     border-radius: 0;
     padding: 5px 20px;
     font-weight: normal;
@@ -269,18 +281,12 @@ body.slide-active {
 
 .btn-submit {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #4f96d4;
     box-shadow: none;
-    border: 1px solid #265a88;
+    border: 1px solid #4f96d4;
     border-radius: 0;
     padding: 5px 20px;
     font-weight: normal;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
 }
 
 /* 약관동의 */
@@ -353,5 +359,41 @@ body.slide-active {
 /* 사용자 정보 */
 .user-info .row {
     border-bottom: 1px dotted gray;
-    padding: 10px;
+    padding: 20px;
+}
+
+.user-info .row label {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 40px;
+    float: left;
+    display: inline-flex;
+    width: 120px;
+}
+
+
+.user-info .row:first-child {
+    margin-top: 20px;
+}
+
+.user-info .row:last-child {
+    border-bottom: none;
+}
+
+.s {display: flex}
+
+
+
+.s .flex {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.s .flex input {
+    flex-grow: 1;
+}
+
+.s .flex button {
+    margin-left: 10px;
+    height: 40px;
 }

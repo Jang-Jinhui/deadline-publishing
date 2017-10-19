@@ -5,7 +5,7 @@
   font-family: 'Nanum Barun Gothic';
   font-style: normal;
   font-weight: 200;
-  src: url(../fonts/NanumBarunGothicUltraLight.eot);
+  src: url("../fonts/NanumBarunGothicUltraLight.eot");
   src: local('Nanum Barun Gothic UltraLight'),
        local('NanumBarunGothicUltraLight'),
        url(../fonts/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
