@@ -1,7 +1,9 @@
 @charset "utf-8";
+@import url("./nanumbarungothic.css");
 
 body {
     color: #343434;
+    font-family: "Nanum Barun Gothic";
 }
 
 /* adjust body when menu is open */
@@ -346,4 +348,10 @@ body.slide-active {
 .terms-bottom {
     background-color: #D2D2D2;
     padding: .7em 0;
+}
+
+/* 사용자 정보 */
+.user-info .row {
+    border-bottom: 1px dotted gray;
+    padding: 10px;
 }
