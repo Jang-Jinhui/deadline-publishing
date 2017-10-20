@@ -13,6 +13,7 @@ body.slide-active {
 
 label {
     color: #666666;
+    font-weight: 100;
 }
 
 /*first child of #page-content so it doesn't shift around*/
@@ -77,6 +78,7 @@ label {
     height: 75px;
     line-height: 75px;
     font-size: 24px;
+    font-weight: 100;
 }
 
 .navbar-custom {
@@ -166,6 +168,7 @@ input.form-control {
         height: 75px;
         line-height: 75px;
         font-size: 24px;
+        min-width: 0;
     }
 
     #slide-nav .container {
@@ -277,7 +280,7 @@ input.form-control {
     box-shadow: none;
     border-radius: unset;
     padding: 5px 20px;
-    font-weight: normal;
+    font-weight: 100;
 }
 
 .btn-cancel {
@@ -294,7 +297,7 @@ input.form-control {
 
 /* 약관동의 */
 .sub-header {
-    font-weight: normal;
+    font-weight: 100;
     border-bottom: 1px solid #D2D2D2;
     line-height: 1.5em;
     font-size: 22px;
@@ -367,12 +370,12 @@ input.form-control {
 
 .user-info .row label {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 100;
     line-height: 40px;
     float: left;
     display: inline-flex;
     width: 135px;
-    font-weight: normal;
+    font-weight: 100;
 }
 
 .user-info .row:first-child {
@@ -413,6 +416,67 @@ input.form-control {
 
 .align .flex button,
 .align .flex select {
+    border-radius: unset;
+    font-size: 16px;
+    width: auto;
+    margin-left: 10px;
+    height: 40px;
+}
+
+/* 인증*/
+.panel-verify {
+    border-radius: 10px;
+    border-color: #c0c0c0;
+}
+
+.verify .panel-content {
+    padding: 35px 45px;
+}
+
+.verify .panel-body {
+    padding: 10px 0;
+}
+
+.verify label {
+    font-size: 18px;
+}
+
+.verify .row {
+    border-bottom: 1px solid gray;
+}
+
+.verify .row:last-child {
+    border-bottom: none;
+}
+
+.verify .form-group {
+    padding: 5px 50px;
+}
+
+.verify .form-group:first-child {
+    border-bottom: 1px dotted #d5d5d5;
+}
+
+.verify .form-group > * {
+    margin: 10px 0;
+}
+
+.verify .form-group .group .phone {
+    display: inline;
+    width: 28%;
+    margin-right: 10px;
+}
+.verify .form-group .flex {
+    display: flex;
+}
+
+.verify .form-group .flex input {
+    flex-grow: 1;
+}
+.verify .form-group .flex button {
+    margin-left: 10px;
+}
+.verify .form-group .flex select {
     border-radius: unset;
     font-size: 16px;
     width: auto;
