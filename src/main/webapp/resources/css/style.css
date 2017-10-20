@@ -364,7 +364,7 @@ input.form-control {
 
 /* 사용자 정보 */
 .user-info .row {
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dotted #d3d3d3;
     padding: 20px;
 }
 
@@ -375,7 +375,6 @@ input.form-control {
     float: left;
     display: inline-flex;
     width: 135px;
-    font-weight: 100;
 }
 
 .user-info .row:first-child {
@@ -466,6 +465,7 @@ input.form-control {
     width: 28%;
     margin-right: 10px;
 }
+
 .verify .form-group .flex {
     display: flex;
 }
@@ -473,13 +473,128 @@ input.form-control {
 .verify .form-group .flex input {
     flex-grow: 1;
 }
+
 .verify .form-group .flex button {
     margin-left: 10px;
 }
+
 .verify .form-group .flex select {
     border-radius: unset;
     font-size: 16px;
     width: auto;
     margin-left: 10px;
     height: 40px;
+}
+
+/* 환자등록 */
+.sufferer .row {
+    border-bottom: 1px dotted #d3d3d3;
+    padding: 20px;
+}
+
+.sufferer .row label {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 40px;
+    float: left;
+    display: inline-flex;
+    width: 135px;
+}
+
+.sufferer .row:first-child {
+    margin-top: 20px;
+}
+
+.sufferer .row:last-child {
+    border-bottom: none;
+}
+
+.sufferer .radio-inline {
+    padding-left: 35px;
+    width: auto !important;
+}
+
+.sufferer .radio-inline + .radio-inline {
+    margin-left: 20px;
+}
+
+.sufferer .radio-inline [type=radio] {
+    margin: 7px 0 0 -35px;
+    height: 25px;
+    width: 25px;
+}
+
+.sufferer .row.ble {
+    padding: 30px 20px;
+    border-bottom: 1px solid #b0b0b0;
+    border-top: 1px solid #b0b0b0;
+    margin-top: 20px;
+    display: flex;
+}
+
+.sufferer .row.ble .l .lb {
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    background-color: #4f96d6;
+    border-radius: 6px;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    margin-bottom: 0px;
+    line-height: 118px;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: normal;
+    display: inline-block;
+}
+
+.sufferer .row.ble .lb > div {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+    height: auto;
+}
+
+.sufferer .row.ble .lb span {
+    display: block;
+}
+
+.sufferer .row.ble .lb span i {
+    color: white;
+    background-color: #256499;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.sufferer .ble .flex {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px 0;
+    margin-left: 15px;
+}
+
+.r1, r2 {
+    padding: 1px 0;
+}
+
+.r1 {
+    flex-grow: 1;
+    align-items: flex-start;
+    display: flex;
+}
+
+.r2 {
+    flex-grow: 1;
+    align-items: flex-end;
+    display: flex;
+}
+
+.r1 input, .r2 input {
+    margin-right: 10px;
+    width: 25%;
+    line-height: 35px;
 }
