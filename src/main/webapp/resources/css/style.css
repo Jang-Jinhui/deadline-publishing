@@ -11,6 +11,10 @@ body.slide-active {
     overflow-x: hidden
 }
 
+label {
+    color: #666666;
+}
+
 /*first child of #page-content so it doesn't shift around*/
 .no-margin-top {
     margin-top: 0px !important
@@ -146,7 +150,7 @@ body.slide-active {
 
 input.form-control {
     height: 40px;
-    border-radius: 0;
+    border-radius: unset;
 }
 
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
@@ -268,25 +272,24 @@ input.form-control {
     line-height: 25px;
 }
 
-.btn-cancel {
+.btn-cancel, .btn-submit {
     font-size: 18px;
-    color: #fff;
-    background-color: #686868;
     box-shadow: none;
-    border: 1px solid 686868;
-    border-radius: 0;
+    border-radius: unset;
     padding: 5px 20px;
     font-weight: normal;
+}
+
+.btn-cancel {
+    color: #fff;
+    background-color: #686868;
+    border: 1px solid #686868;
 }
 
 .btn-submit {
     color: #fff;
     background-color: #4f96d4;
-    box-shadow: none;
     border: 1px solid #4f96d4;
-    border-radius: 0;
-    padding: 5px 20px;
-    font-weight: normal;
 }
 
 /* 약관동의 */
@@ -368,9 +371,9 @@ input.form-control {
     line-height: 40px;
     float: left;
     display: inline-flex;
-    width: 120px;
+    width: 135px;
+    font-weight: normal;
 }
-
 
 .user-info .row:first-child {
     margin-top: 20px;
@@ -380,20 +383,39 @@ input.form-control {
     border-bottom: none;
 }
 
-.s {display: flex}
+.align {
+    display: flex;
+}
 
-
-
-.s .flex {
+.align .flex {
     display: inline-flex;
+    width: 50%;
+}
+
+.align .flex.w60 {
+    width: 60%;
+}
+
+.align .flex.full {
     flex-grow: 1;
 }
 
-.s .flex input {
+.align .flex input {
     flex-grow: 1;
+    font-size: 16px;
 }
 
-.s .flex button {
+.align input.phone {
+    flex-shrink: 1;
+    width: 1px; /* trick */
+    margin-right: 10px;
+}
+
+.align .flex button,
+.align .flex select {
+    border-radius: unset;
+    font-size: 16px;
+    width: auto;
     margin-left: 10px;
     height: 40px;
 }
