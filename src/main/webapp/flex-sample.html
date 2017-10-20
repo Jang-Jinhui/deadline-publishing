@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
+    <link rel="stylesheet" href="./resources/vender/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/vender/font-awesome-4.7.0/css/font-awesome.min.css">
     <style type="text/css" rel="stylesheet/less">
         div { box-sizing: border-box; }
         .wrap {
@@ -21,6 +23,18 @@
         .content.g2 { background-color: yellow; flex-grow: 1; display: flex; }
         .g3 { background: brown; flex-grow: 1; }
         .g4 { background: peru; flex-grow: 1; }
+        .l1 { width: 130px; }
+        .lb { height: 100px; width: 100px; text-align: center; border: 1px solid blue; margin-bottom: 0px; line-height: 98px;}
+        .lb > div {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 20px;
+        }
+        .lb span { display: block; }
+        .l2 { display: inline-flex; flex-direction: column; }
+        .l3 { background: purple; flex-grow: 1; align-items: flex-start; display: flex; }
+        .l4 { background-color: greenyellow; flex-grow: 1; align-items: flex-end; display: flex; }
+        .l3 input, .l4 input { margin-right: 10px; width: 25%; line-height: 35px;}
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -35,6 +49,28 @@
     <div class="content g2">
         <div class="content g3">G3</div>
         <div class="content g4">G4</div>
+    </div>
+</div>
+<div class="wrap">
+    <div class="l1">
+        <label class="lb">
+            <div>
+                <span class="fa fa-plus-circle" aria-hidden="true"></span>
+                fa-plus-circle CENTER CENTER
+            </div>
+        </label>
+    </div>
+    <div class="content l2">
+        <div class="content l3">
+            <input>
+            <input>
+            <input>
+        </div>
+        <div class="content l4">
+            <input>
+            <input>
+            <input>
+        </div>
     </div>
 </div>
 </body>
