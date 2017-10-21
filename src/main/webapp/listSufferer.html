@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width">
+    <title>Title</title>
+    <link rel="stylesheet" href="./resources/vender/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/vender/bootstrap-3.3.7/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./resources/vender/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="./resources/vender/html5shiv-3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="./resources/vender/html5shiv-3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="./resources/vender/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./resources/vender/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./resources/js/slide-menu.js"></script>
+    <script type="text/javascript">
+        $().ready(function () {
+            $('button.file').click(function () {
+                $('button.file').next('[type=file]').click();
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation" id="slide-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- 메뉴 OR back -->
+            <!--
+            <a class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            -->
+            <!-- 메뉴 OR back -->
+            <a class="back btn btn-xs" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+            <a class="navbar-brand" href="#">환자목록</a>
+            <a class="expansion btn btn-xs" href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+        </div>
+        <div id="slidemenu">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="page-content">
+    <div class="container sufferer-list">
+
+        <div class="row sufferer-list-item">
+            <div class="character">
+                <img class="photo" src="./resources/images/photo.jpg" alt="사진">
+                <span class="alarm">알람: <strong class="number">3</strong>회</span>
+                <button type="button" class="btn btn-submit status">기저귀 상태</button>
+            </div>
+            <ul class="items">
+                <li><label class="dt">이름</label><span class="dd">신숙자</span></li>
+                <li><label class="dt">나이</label><span class="dd">62세</span></li>
+                <li><label class="dt">성별</label><span class="dd">여</span></li>
+                <li><label class="dt">간병인</label><span class="dd">정희연</span></li>
+                <li><label class="dt">보호자</label><span class="dd">신정현</span></li>
+            </ul>
+        </div>
+
+        <div class="row sufferer-list-item">
+            <div class="character">
+                <img class="photo" src="./resources/images/photo.jpg" alt="사진">
+                <span class="alarm">알람: <strong class="number">3</strong>회</span>
+                <button type="button" class="btn btn-submit status">기저귀 상태</button>
+            </div>
+            <ul class="items">
+                <li><label class="dt">이름</label><span class="dd">신숙자</span></li>
+                <li><label class="dt">나이</label><span class="dd">62세</span></li>
+                <li><label class="dt">성별</label><span class="dd">여</span></li>
+                <li><label class="dt">간병인</label><span class="dd">정희연</span></li>
+                <li><label class="dt">보호자</label><span class="dd">신정현</span></li>
+            </ul>
+        </div>
+
+        <div class="row sufferer-list-item">
+            <div class="character">
+                <img class="photo" src="./resources/images/photo.jpg" alt="사진">
+                <span class="alarm">알람: <strong class="number">3</strong>회</span>
+                <button type="button" class="btn btn-submit status">기저귀 상태</button>
+            </div>
+            <ul class="items">
+                <li><label class="dt">이름</label><span class="dd">신숙자</span></li>
+                <li><label class="dt">나이</label><span class="dd">62세</span></li>
+                <li><label class="dt">성별</label><span class="dd">여</span></li>
+                <li><label class="dt">간병인</label><span class="dd">정희연</span></li>
+                <li><label class="dt">보호자</label><span class="dd">신정현</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

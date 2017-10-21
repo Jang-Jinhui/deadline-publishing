@@ -2,7 +2,7 @@
 @import url("./nanumbarungothic.css");
 
 body {
-    color: #343434;
+    color: #545454;
     font-family: "Nanum Barun Gothic";
 }
 
@@ -12,8 +12,8 @@ body.slide-active {
 }
 
 label {
-    color: #666666;
-    font-weight: 100;
+    color: #545454;
+    font-weight: normal;
 }
 
 /*first child of #page-content so it doesn't shift around*/
@@ -78,7 +78,7 @@ label {
     height: 75px;
     line-height: 75px;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .navbar-custom {
@@ -171,12 +171,17 @@ input.form-control[type=checkbox] {
         position: absolute;
     }
 
-    .navbar-header .back {
+    .navbar-header .back, .navbar-header .expansion {
         padding: 0;
         height: 75px;
         line-height: 75px;
-        font-size: 24px;
+        font-size: 28px;
         min-width: 0;
+    }
+
+    .navbar-header .expansion {
+        position: fixed;
+        right: 15px;
     }
 
     #slide-nav .container {
@@ -258,7 +263,7 @@ input.form-control[type=checkbox] {
         left: 0 !important
     }
 
-    .navbar-header .back {
+    .navbar-header .back, .navbar-header .expansion {
         display: none;
     }
 
@@ -288,7 +293,7 @@ input.form-control[type=checkbox] {
     box-shadow: none;
     border-radius: unset;
     padding: 5px 20px;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .btn-cancel {
@@ -345,7 +350,6 @@ input.form-control {
     margin: 15px 0 0;
 }
 
-
 .panel-body .form-group:last-child {
     border-bottom: none;
     margin-bottom: 0;
@@ -362,7 +366,7 @@ input.form-control {
 
 .row.ble .l .lb {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: normal;
     color: white;
     background-color: #4f96d6;
     border-radius: 6px;
@@ -428,18 +432,159 @@ input.form-control {
 }
 
 /* component - table */
-.table-c-list {
+.table-content-list {
     font-size: 16px;
 }
-.table-c-list thead th {
-    background-color: #9999ff;
-    height: 60px;
+
+.table-content-list thead > tr > th {
+    background-color: #7aa9d7;
+    height: 50px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    border-left: 0;
+    border-right: 0;
 }
 
+.table-content-list tbody > tr > td {
+    height: 45px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.table-content-list tbody > tr:last-child {
+    border-bottom: 1px solid #7aa9d7;
+}
+
+/* component - sufferer-list-item */
+.sufferer-list-item {
+    display: flex;
+}
+
+.sufferer-list-item .character {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sufferer-list-item > .character > .photo {
+    width: 122px;
+    height: 122px;
+    border: 1px solid #e7e7e7;
+}
+
+.sufferer-list-item > .character > .alarm {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sufferer-list-item > .character > .alarm > .number {
+    font-weight: bold;
+    color: #fd1970;
+}
+
+.sufferer-list-item > .character > .status {
+    font-size: 18px;
+    margin: 18px auto 0;
+    padding: 6px;
+    border-radius: 6px;
+    line-height: 26px;
+}
+
+.sufferer-list-item .items {
+    margin: 0 0 0 45px;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.sufferer-list-item .items li {
+    display: block;
+    font-size: 22px;
+    line-height: 44px;
+    height: 45px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.sufferer-list-item .items li > .dt {
+    padding-left: 30px;
+    width: 100px;
+    position: relative;
+}
+
+.sufferer-list-item .items li > .dt::before {
+    content: "·";
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.sufferer-list-item .items li > .dt::after {
+    content: ":";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sufferer-list-item .items li > .dd {
+    margin-left: 30px;
+    color: #7b7b7b;
+}
+
+/* component - sufferer-show */
+.sufferer-show-item {
+    display: flex;
+}
+
+.sufferer-show-item .character {
+    display: flex;
+    flex-direction: row;
+}
+
+.sufferer-show-item .character > .photo {
+    width: 122px;
+    height: 122px;
+    border: 1px solid #e7e7e7;
+}
+
+.sufferer-show-item .items {
+    margin: 0 0 0 50px;
+    padding: 0;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.sufferer-show-item .items li {
+    display: block;
+    font-size: 22px;
+    line-height: 40px;
+    height: 41px;
+}
+
+.sufferer-show-item .items li > .dt {
+    position: relative;
+    width: 55px;
+}
+
+.sufferer-show-item .items li > .dt::after {
+    content: ":";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sufferer-show-item .items li > .dd {
+    margin-left: 10px;
+    color: #7b7b7b;
+}
 
 /* flow */
 .align {
     display: flex;
+}
+
+.align > label {
+    margin-bottom: 0;
 }
 
 .align .phone {
@@ -482,17 +627,16 @@ input.form-control {
     margin-left: 10px;
 }
 
-
 /* 약관동의 */
 .sub-header {
-    font-weight: 100;
+    font-weight: normal;
     border-bottom: 1px solid #D2D2D2;
     line-height: 1.5em;
     font-size: 22px;
     margin: 0;
     padding: 7px 10px 7px 15px;
     position: relative;
-    color: #666666;
+    color: #545454;
 }
 
 .sub-header .checkbox {
@@ -558,7 +702,7 @@ input.form-control {
 
 .user-info .row label {
     font-size: 22px;
-    font-weight: 100;
+    font-weight: normal;
     line-height: 40px;
     float: left;
     display: inline-flex;
@@ -586,7 +730,6 @@ input.form-control {
     border-bottom: 1px dotted #d5d5d5;
 }
 
-
 /* 환자등록 */
 .sufferer .row {
     border-bottom: 1px dotted #d3d3d3;
@@ -595,7 +738,7 @@ input.form-control {
 
 .sufferer .row label {
     font-size: 22px;
-    font-weight: 100;
+    font-weight: normal;
     line-height: 40px;
     float: left;
     display: inline-flex;
@@ -625,4 +768,46 @@ input.form-control {
     width: 25px;
 }
 
-/* 게이트웨이 */
+.sufferer-list .row {
+    border-bottom: 2px solid #b0b0b0;
+    padding: 45px 50px;
+}
+
+/*  */
+.sufferer-show .row {
+    padding: 30px 40px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.sufferer-show .row:last-child {
+    border-bottom: none;
+}
+
+.sufferer-show-info .items {
+     list-style: none;
+     padding: 0;
+ }
+
+.sufferer-show-info .items li {
+}
+
+.sufferer-show-info .items li a {
+    display: block;
+    padding-left: 110px;
+    font-size: 22px;
+    line-height: 62px;
+    position: relative;
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.sufferer-show-info .items li a::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../images/icon_sufferer_items.jpg") no-repeat 0 0;
+    height: 62px;
+    width: 62px;
+}
