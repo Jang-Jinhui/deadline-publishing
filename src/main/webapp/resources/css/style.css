@@ -797,7 +797,7 @@ input.form-control {
     font-size: 22px;
     line-height: 62px;
     position: relative;
-    color: #d3d3d3;
+    color: #545454;
     text-decoration: none;
 }
 
@@ -805,9 +805,24 @@ input.form-control {
     content: "";
     display: inline-block;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     background: url("../images/icon_sufferer_items.jpg") no-repeat 0 0;
     height: 62px;
     width: 62px;
+}
+.sufferer-show-info .items li.user a::before {
+    background-position-x: -248px;
+}
+.sufferer-show-info .items li.ble a::before {
+    background-position-x: -186px;
+}
+.sufferer-show-info .items li.diaper a::before {
+    background-position-x: -124px;
+}
+.sufferer-show-info .items li.prediction a::before {
+    background-position-x: -62px;
+}
+.sufferer-show-info .items li.record a::before {
+    background-position-x: 0;
 }
