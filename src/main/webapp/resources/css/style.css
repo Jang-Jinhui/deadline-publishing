@@ -171,6 +171,10 @@ input.form-control[type=checkbox] {
         position: absolute;
     }
 
+    .navbar-header {
+        position: relative;
+    }
+
     .navbar-header .back, .navbar-header .expansion {
         padding: 0;
         height: 75px;
@@ -180,7 +184,7 @@ input.form-control[type=checkbox] {
     }
 
     .navbar-header .expansion {
-        position: fixed;
+        position: absolute;
         right: 15px;
     }
 
@@ -578,6 +582,53 @@ input.form-control {
     color: #7b7b7b;
 }
 
+.sufferer-info-item {
+    display: flex;
+}
+
+.sufferer-info-item .character {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sufferer-info-item .character > .photo {
+    width: 122px;
+    height: 122px;
+    border: 1px solid #e7e7e7;
+}
+
+.sufferer-info-item .items {
+    margin: 0 0 0 50px;
+    padding: 0;
+    flex-grow: 1;
+    list-style: none;
+}
+
+.sufferer-info-item .items li {
+    display: flex;
+    font-size: 22px;
+    line-height: 40px;
+    height: 41px;
+    align-items: center;
+    align-content: center;
+}
+
+.sufferer-info-item .items li > .dt {
+    position: relative;
+    width: 55px;
+    line-height: 34px;
+    height: 34px;
+    margin-bottom: 0;
+}
+
+.sufferer-info-item .items li > .dd {
+    margin-left: 10px;
+    color: #7b7b7b;
+    height: 34px;
+    width: 70%;
+}
+
 /* flow */
 .align {
     display: flex;
@@ -585,6 +636,12 @@ input.form-control {
 
 .align > label {
     margin-bottom: 0;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 40px;
+    float: left;
+    display: inline-flex;
+    width: 135px;
 }
 
 .align .phone {
@@ -737,11 +794,6 @@ input.form-control {
 }
 
 .sufferer .row label {
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 40px;
-    float: left;
-    display: inline-flex;
     width: 135px;
 }
 
@@ -756,6 +808,8 @@ input.form-control {
 .sufferer .radio-inline {
     padding-left: 35px;
     width: auto !important;
+    line-height: 40px;
+    font-size: 20px;
 }
 
 .sufferer .radio-inline + .radio-inline {
@@ -773,7 +827,7 @@ input.form-control {
     padding: 45px 50px;
 }
 
-/*  */
+/* 환자 상세정보 */
 .sufferer-show .row {
     padding: 30px 40px;
     border-bottom: 1px solid #cacaca;
@@ -784,11 +838,8 @@ input.form-control {
 }
 
 .sufferer-show-info .items {
-     list-style: none;
-     padding: 0;
- }
-
-.sufferer-show-info .items li {
+    list-style: none;
+    padding: 0;
 }
 
 .sufferer-show-info .items li a {
@@ -811,18 +862,40 @@ input.form-control {
     height: 62px;
     width: 62px;
 }
+
 .sufferer-show-info .items li.user a::before {
     background-position-x: -248px;
 }
+
 .sufferer-show-info .items li.ble a::before {
     background-position-x: -186px;
 }
+
 .sufferer-show-info .items li.diaper a::before {
     background-position-x: -124px;
 }
+
 .sufferer-show-info .items li.prediction a::before {
     background-position-x: -62px;
 }
+
 .sufferer-show-info .items li.record a::before {
     background-position-x: 0;
+}
+
+/* 환자 정보보기 */
+.sufferer-info .row {
+    padding: 30px 40px;
+    border-bottom: 1px solid #cacaca;
+}
+.sufferer-info .group {
+    padding: 20px 0;
+}
+.sufferer-info .group > .row {
+    padding: 20px 40px;
+    border-bottom: 1px dotted #d3d3d3;
+}
+
+.sufferer-info .row.ble {
+    margin-top: 0;
 }

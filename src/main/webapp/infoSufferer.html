@@ -37,7 +37,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="navbar-brand" href="#">환자추가</a>
+            <a class="navbar-brand" href="#">환자 상세보기</a>
+            <a class="expansion btn btn-xs"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
         </div>
         <div id="slidemenu">
             <ul class="nav navbar-nav">
@@ -50,47 +51,49 @@
 </div>
 
 <div id="page-content">
-    <div class="container sufferer">
-        <div class="row align">
-            <label for="ui-name">환자명</label>
-            <div class="flex full">
-                <input type="text" class="form-control" id="ui-name">
-                <button class="btn btn-submit" type="button">중복확인</button>
+    <div class="container sufferer-info">
+        <div class="row sufferer-info-item">
+            <div class="character">
+                <img class="photo" src="./resources/images/photo.jpg" alt="사진">
+                <ul class="items">
+                    <li>
+                        <label class="dt" for="ui-name">이름</label>
+                        <input type="text" class="form-control dd" id="ui-name">
+                    </li>
+                    <li>
+                        <label class="dt" for="ui-age">나이</label>
+                        <input type="text" class="form-control dd" id="ui-age">
+                    </li>
+                    <li>
+                        <label class="dt" for="ui-gender">성별</label>
+                        <input type="text" class="form-control dd" id="ui-gender">
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row align">
-            <label for="ui-age">나이</label>
-            <div class="flex">
-                <input type="text" class="form-control" id="ui-age">
+
+        <div class="group">
+            <div class="row align">
+                <label for="ui-protector-name">보호자명</label>
+                <div class="flex">
+                    <input type="text" class="form-control" id="ui-protector-name">
+                </div>
             </div>
-        </div>
-        <div class="row align">
-            <label>성별</label>
-            <div>
-                <label class="radio-inline"><input type="radio" name="gender" checked>남성</label>
-                <label class="radio-inline"><input type="radio" name="gender">여성</label>
+            <div class="row align">
+                <label for="ui-protector-phone">보호자 연락처</label>
+                <div class="flex w60">
+                    <input type="text" class="form-control phone" id="ui-protector-phone">
+                    <input type="text" class="form-control phone">
+                    <input type="text" class="form-control phone">
+                </div>
             </div>
-        </div>
-        <div class="row align">
-            <label for="ui-protector-name">보호자명</label>
-            <div class="flex">
-                <input type="text" class="form-control" id="ui-protector-name">
-            </div>
-        </div>
-        <div class="row align">
-            <label for="ui-protector-phone">보호자 연락처</label>
-            <div class="flex w60">
-                <input type="text" class="form-control phone" id="ui-protector-phone">
-                <input type="text" class="form-control phone">
-                <input type="text" class="form-control phone">
-            </div>
-        </div>
-        <div class="row align" style="border-bottom: none;">
-            <label>환자사진</label>
-            <div class="flex full">
-                <input type="text" class="form-control" readonly>
-                <button class="btn btn-submit file" type="button">찾아보기</button>
-                <input type="file" style="display: none;">
+            <div class="row align" style="border-bottom: none;">
+                <label>환자사진</label>
+                <div class="flex full">
+                    <input type="text" class="form-control" readonly>
+                    <button class="btn btn-submit file" type="button">찾아보기</button>
+                    <input type="file" style="display: none;">
+                </div>
             </div>
         </div>
 
@@ -114,13 +117,6 @@
                     <input type="text" class="form-control phone">
                     <input type="text" class="form-control phone">
                 </div>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="button-group">
-                <a href="#" class="btn btn-cancel">취소</a>
-                <button type="submit" class="btn btn-submit">등록</button>
             </div>
         </div>
     </div>
