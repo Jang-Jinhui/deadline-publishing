@@ -731,6 +731,122 @@ input.form-control {
     margin-top: 50%;
 }
 
+/* 로그인 */
+.login {
+    position: relative;
+}
+
+.login .row {
+    margin: 0;
+}
+
+.login .row.title {
+    margin-top: 35%;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.login .row.control {
+    margin-top: 50px;
+    padding: 0 70px;
+    border: 0;
+    box-shadow: none;
+}
+
+.login .row.control > .user-id,
+.login .row.control > .user-pwd {
+    height: 54px;
+    font-size: 22px;
+    border: none;
+    border-radius: 27px;
+    padding: 6px 20px;
+}
+
+.login .row.control > .user-id {
+    margin-top: 20px;
+}
+
+.login .row.control > .user-pwd {
+    margin-top: 20px;
+}
+
+.login .row.control .options {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.login .row.control .options .checkbox {
+    display: inline-block;
+    margin: 0;
+}
+
+.login .row.control .options .checkbox > label {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.login .row.control .options .checkbox > label .cr {
+    border-color: #ffffff;
+    border-radius: 0;
+}
+
+.login .row.control .options .links {
+    float: right;
+}
+
+.login .row.control .options .links a {
+    color: #ffffff;
+    margin: 0 20px;
+    font-weight: 100;
+    position: relative;
+}
+
+.login .row.control .options .links a.password::before {
+    content: "|";
+    position: absolute;
+    left: -25px;
+}
+
+.login .row.buttons {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 70px;
+}
+
+.login .row.buttons > * {
+    display: block;
+    width: 100%;
+}
+
+.login .row.buttons > .success {
+    background-color: #3e6f9b;
+    height: 54px;
+    font-size: 22px;
+    border: none;
+    border-radius: 27px;
+    color: #ffffff;
+}
+
+.login .row.buttons > .to {
+    margin-top: 20px;
+    background-color: #ffffff;
+    height: 54px;
+    font-size: 22px;
+    border: none;
+    border-radius: 27px;
+    vertical-align: middle;
+    line-height: 42px;
+    color: #0f0f0f;
+}
+
+.login .row.buttons > .to > i {
+    font-size: 18px;
+    color: #3e6f9b;
+    margin-left: 5px;
+}
+
 /* 약관동의 */
 .sub-header {
     font-weight: normal;
