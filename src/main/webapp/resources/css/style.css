@@ -279,6 +279,22 @@ input.form-control[type=checkbox] {
     }
 }
 
+/* modal */
+.modal-dialog {
+    margin-top: 100px;
+}
+
+.modal-header {
+    text-align: center;
+    border-bottom: 1px solid #64abb1;
+}
+
+.modal-header .modal-title {
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 24px;
+}
+
 /* control */
 .no-border {
     border: 0;
@@ -918,13 +934,11 @@ input.form-control {
     display: flex;
     padding: 20px 0;
     border-bottom: 1px dotted #d3d3d3;
+    align-content: center;
 }
 
-.sufferer-info-bel .lists > ul > li {
-    display: flex;
-    padding: 20px 0;
-    border-bottom: 1px dotted #d3d3d3;
-    align-content: center;
+.sufferer-info-bel .lists > ul > li:last-child {
+    border-bottom: 1px solid #64abb1;
 }
 
 .sufferer-info-bel .lists > ul > li .number {
@@ -948,4 +962,15 @@ input.form-control {
     font-size: 18px;
 }
 
+.sufferer-info-bel-dialog .align {
+    padding: 40px 0;
+    justify-content: center;
+}
 
+.sufferer-info-bel-dialog .align label {
+    width: 100px;
+}
+
+.sufferer-info-bel-dialog .modal-footer {
+    text-align: center;
+}

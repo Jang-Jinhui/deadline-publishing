@@ -19,8 +19,8 @@
     <script type="text/javascript" src="./resources/js/slide-menu.js"></script>
     <script type="text/javascript">
         $().ready(function () {
-            $('button.file').click(function () {
-                $('button.file').next('[type=file]').click();
+            $('#theModal').on('show.bs.modal', function (e) {
+                $(this).find('.modal-body input').val($(e.relatedTarget).data('whatever'));
             });
         });
     </script>
@@ -32,7 +32,7 @@
         <div class="navbar-header">
             <a class="back btn btn-link btn-xs" href="#"><i class="glyphicon glyphicon-arrow-left" aria-hidden="true"></i></a>
             <a class="navbar-brand" href="#">환자 - BEL 목록</a>
-            <a class="expansion btn btn-xs" href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+            <a class="expansion btn btn-xs" href="#" data-toggle="modal" data-target="#theModal"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
         </div>
     </div>
 </div>
@@ -50,12 +50,64 @@
                         <button type="button" class="btn btn-cancel">삭제</button>
                     </span>
                 </li>
+                <li>
+                    <span class="number">01</span>
+                    <span class="name">환자 1</span>
+                    <span class="buttons">
+                        <button type="button" class="btn btn-cancel">수정</button>
+                        <button type="button" class="btn btn-cancel">교환</button>
+                        <button type="button" class="btn btn-cancel">삭제</button>
+                    </span>
+                </li>
+                <li>
+                    <span class="number">01</span>
+                    <span class="name">환자 1</span>
+                    <span class="buttons">
+                        <button type="button" class="btn btn-cancel">수정</button>
+                        <button type="button" class="btn btn-cancel">교환</button>
+                        <button type="button" class="btn btn-cancel">삭제</button>
+                    </span>
+                </li>
+                <li>
+                    <span class="number">01</span>
+                    <span class="name">환자 1</span>
+                    <span class="buttons">
+                        <button type="button" class="btn btn-cancel">수정</button>
+                        <button type="button" class="btn btn-cancel">교환</button>
+                        <button type="button" class="btn btn-cancel">삭제</button>
+                    </span>
+                </li>
             </ul>
         </div>
 
         <div class="row text-center">
             <div class="button-group">
                 <a href="#" class="btn btn-cancel">뒤로</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade sufferer-info-bel-dialog" id="theModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">BEL 추가</h4>
+            </div>
+            <div class="modal-body">
+                <div class="align">
+                    <label for="ui-bel-id">BEL ID</label>
+                    <div class="flex">
+                        <input type="text" class="form-control" id="ui-bel-id">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-submit">등록</button>
             </div>
         </div>
     </div>
