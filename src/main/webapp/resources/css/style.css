@@ -888,9 +888,11 @@ input.form-control {
     padding: 30px 40px;
     border-bottom: 1px solid #cacaca;
 }
+
 .sufferer-info .group {
     padding: 20px 0;
 }
+
 .sufferer-info .group > .row {
     padding: 20px 40px;
     border-bottom: 1px dotted #d3d3d3;
@@ -899,3 +901,51 @@ input.form-control {
 .sufferer-info .row.ble {
     margin-top: 0;
 }
+
+/* 환자 - 환자 BEL */
+
+.sufferer-info-bel .lists {
+    padding: 20px;
+}
+
+.sufferer-info-bel .lists > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sufferer-info-bel .lists > ul > li {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px dotted #d3d3d3;
+}
+
+.sufferer-info-bel .lists > ul > li {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px dotted #d3d3d3;
+    align-content: center;
+}
+
+.sufferer-info-bel .lists > ul > li .number {
+    width: 90px;
+    text-align: center;
+}
+
+.sufferer-info-bel .lists > ul > li .name {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.sufferer-info-bel .lists > ul > li .buttons > .btn {
+    font-size: 12px;
+    padding: 2px 5px !important;
+    min-width: 0;
+    line-height: normal;
+}
+
+.sufferer-info-bel .lists > ul li > span {
+    font-size: 18px;
+}
+
+
