@@ -700,6 +700,37 @@ input.form-control {
     margin-left: 10px;
 }
 
+/* 메인 */
+.index {
+    position: relative;
+}
+
+.index .row {
+    margin: 0;
+}
+
+.index .row.title {
+    margin-top: 35%;
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.index .row.user {
+    text-align: center;
+    margin-top: 25%;
+}
+
+.index .row.user > .common {
+    margin-left: 10%;
+}
+
+.index .row.ci {
+    text-align: center;
+    margin-top: 50%;
+}
+
 /* 약관동의 */
 .sub-header {
     font-weight: normal;
