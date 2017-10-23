@@ -794,6 +794,7 @@ input.form-control {
 
 .login .row.control .options .links {
     float: right;
+    white-space: nowrap;
 }
 
 .login .row.control .options .links a {
