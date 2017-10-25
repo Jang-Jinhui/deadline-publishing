@@ -703,6 +703,9 @@ input.form-control {
 /* 메인 */
 .index {
     position: relative;
+    height: 1136px;
+    background: url("../images/bg_main.jpg") no-repeat top center fixed;
+    background-size: cover;
 }
 
 .index .row {
@@ -734,6 +737,9 @@ input.form-control {
 /* 로그인 */
 .login {
     position: relative;
+    height: 1136px;
+    background: url("../images/bg_login.jpg") no-repeat top center fixed;
+    background-size: cover;
 }
 
 .login .row {
@@ -846,6 +852,86 @@ input.form-control {
     font-size: 18px;
     color: #3e6f9b;
     margin-left: 5px;
+}
+
+/* 마이페이지 */
+.my-page {
+    background: url("../images/bg_my_page.jpg") no-repeat top center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-page .row {
+    margin: 0;
+    padding: 0;
+}
+
+.my-page .row.header {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.my-page .row.header > .welcome {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.my-page .row.header > .info {
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff;
+}
+
+.my-page .row.content {
+    flex-grow: 3;
+    background-color: #dfeff9;
+    position: relative;
+}
+
+.my-page .row.content::before {
+    content: "";
+    background: url("../images/ico_my_page.png") no-repeat;
+    width: 211px;
+    height: 211px;
+    position: absolute;
+    background-size: cover;
+    background-origin: border-box;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -75%);
+}
+
+.my-page .row.content > .links {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.my-page .row.content > .links > a {
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+.my-page .row.content > .ci {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* 약관동의 */
