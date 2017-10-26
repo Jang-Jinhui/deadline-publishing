@@ -913,7 +913,7 @@ input.form-control {
 
 .my-page .row.content > .links {
     position: absolute;
-    top: 20%;
+    top: 15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -924,7 +924,18 @@ input.form-control {
 
 .my-page .row.content > .links > a {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 20px 45px;
+    text-align: center;
+}
+
+.my-page .row.content > .links > a > img {
+    display: block;
+}
+
+.my-page .row.content > .links > a > label {
+    font-size: 24px;
+    color: #5da6d9;
+    font-weight: normal;
 }
 
 .my-page .row.content > .ci {
