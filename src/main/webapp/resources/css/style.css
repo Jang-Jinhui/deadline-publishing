@@ -64,7 +64,7 @@ label {
 }
 
 .navbar {
-    min-height: 75px;
+    min-height: 34pt;
     margin-bottom: 0;
 }
 
@@ -74,10 +74,10 @@ label {
 }
 
 .navbar-brand {
-    padding: 0 15px;
-    height: 75px;
-    line-height: 75px;
-    font-size: 24px;
+    padding: 0 8pt;
+    height: 34pt;
+    line-height: 34pt;
+    font-size: 14pt;
     font-weight: normal;
 }
 
@@ -151,8 +151,9 @@ label {
 }
 
 input.form-control {
-    height: 40px;
+    height: 20pt;
     border-radius: unset;
+    font-size: 10pt;
 }
 
 input.form-control[type=checkbox] {
@@ -303,16 +304,16 @@ input.form-control[type=checkbox] {
 
 /* component - button */
 .btn {
-    font-size: 18px;
-    min-width: 100px;
+    font-size: 11pt;
+    min-width: 80px;
     line-height: 25px;
 }
 
 .btn-cancel, .btn-submit {
-    font-size: 18px;
+    font-size: 11pt;
     box-shadow: none;
     border-radius: unset;
-    padding: 5px 20px;
+    padding: 2px 10px;
     font-weight: normal;
 }
 
@@ -338,12 +339,12 @@ select.form-control {
 }
 
 input.form-control {
-    font-size: 16px;
+    font-size: 10pt;
 }
 
 /* component - panel */
 .panel-content {
-    padding: 35px 45px;
+    padding: 0 25pt;
 }
 
 .panel-border {
@@ -356,17 +357,16 @@ input.form-control {
 }
 
 .panel-body .form-group {
-    padding: 5px 50px;
+    padding: 0 15pt 10pt;
     border-bottom: 1px dotted #d5d5d5;
-    padding-bottom: 20px;
 }
 
 .panel-body .form-group > * {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .panel-body .form-group > label {
-    font-size: 18px;
+    font-size: 11pt;
     margin: 15px 0 0;
 }
 
@@ -453,12 +453,11 @@ input.form-control {
 
 /* component - table */
 .table-content-list {
-    font-size: 16px;
+    font-size: 10pt;
 }
 
 .table-content-list thead > tr > th {
     background-color: #7aa9d7;
-    height: 50px;
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -467,7 +466,6 @@ input.form-control {
 }
 
 .table-content-list tbody > tr > td {
-    height: 45px;
     color: #ffffff;
     vertical-align: middle;
 }
@@ -703,26 +701,29 @@ input.form-control {
 /* 메인 */
 .index {
     position: relative;
-    height: 1136px;
-    background: url("../images/bg_main.jpg") no-repeat top center fixed;
+    height: 100%;
+    background: url("../images/bg_main.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
 .index .row {
+    position: relative;
     margin: 0;
 }
 
 .index .row.title {
-    margin-top: 35%;
-    font-size: 45px;
+    /*margin-top: 35%;*/
+    font-size: 21pt;
     text-align: center;
     color: #ffffff;
-    font-weight: 100;
+    font-weight: 300;
+    top:10%;
 }
 
 .index .row.user {
     text-align: center;
-    margin-top: 25%;
+    /*margin-top: 25%;*/
+    top: 23%;
 }
 
 .index .row.user > .common {
@@ -731,14 +732,16 @@ input.form-control {
 
 .index .row.ci {
     text-align: center;
-    margin-top: 50%;
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
 }
 
 /* 로그인 */
 .login {
     position: relative;
-    height: 1136px;
-    background: url("../images/bg_login.jpg") no-repeat top center fixed;
+    height: 100%;
+    background: url("../images/bg_login.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -747,27 +750,27 @@ input.form-control {
 }
 
 .login .row.title {
-    margin-top: 35%;
-    font-size: 60px;
+    margin-top: 25%;
+    font-size: 27pt;
     text-align: center;
     color: #ffffff;
     font-weight: normal;
 }
 
 .login .row.control {
-    margin-top: 50px;
-    padding: 0 70px;
+    margin-top: 25px;
+    padding: 0 25px;
     border: 0;
     box-shadow: none;
 }
 
 .login .row.control > .user-id,
 .login .row.control > .user-pwd {
-    height: 54px;
-    font-size: 22px;
+    height: 26pt;
+    font-size: 17px;
     border: none;
-    border-radius: 27px;
-    padding: 6px 20px;
+    border-radius: 13pt;
+    padding: 4pt 15pt;
 }
 
 .login .row.control > .user-id {
@@ -775,12 +778,17 @@ input.form-control {
 }
 
 .login .row.control > .user-pwd {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .login .row.control .options {
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 9pt;
+}
+@media (max-width: 320px) {
+    .login .row.control .options {
+        font-size: 7pt;
+    }
 }
 
 .login .row.control .options .checkbox {
@@ -819,44 +827,49 @@ input.form-control {
 .login .row.buttons {
     margin-top: 50px;
     text-align: center;
-    padding: 0 70px;
+    padding: 0 25px;
 }
 
 .login .row.buttons > * {
     display: block;
     width: 100%;
+    height: 26pt;
+    font-size: 12pt;
+    border: none;
+    border-radius: 13pt;
+    line-height: 26pt;
+    padding: 0;
 }
 
 .login .row.buttons > .success {
     background-color: #3e6f9b;
-    height: 54px;
-    font-size: 22px;
-    border: none;
-    border-radius: 27px;
     color: #ffffff;
 }
 
 .login .row.buttons > .to {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #ffffff;
-    height: 54px;
-    font-size: 22px;
-    border: none;
-    border-radius: 27px;
-    vertical-align: middle;
-    line-height: 42px;
     color: #0f0f0f;
 }
 
 .login .row.buttons > .to > i {
-    font-size: 18px;
+    font-size: 12pt;
     color: #3e6f9b;
     margin-left: 5px;
+    vertical-align: middle;
+    top: -1px;
+}
+
+.login .row.ci {
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
 }
 
 /* 마이페이지 */
 .my-page {
-    background: url("../images/bg_my_page.jpg") no-repeat top center fixed;
+    background: url("../images/bg_my_page.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100%;
     display: flex;
@@ -884,7 +897,7 @@ input.form-control {
 }
 
 .my-page .row.header > .info {
-    font-size: 30px;
+    font-size: 14pt;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -901,8 +914,8 @@ input.form-control {
 .my-page .row.content::before {
     content: "";
     background: url("../images/ico_my_page.png") no-repeat;
-    width: 211px;
-    height: 211px;
+    width: 106px;
+    height: 106px;
     position: absolute;
     background-size: cover;
     background-origin: border-box;
@@ -924,7 +937,7 @@ input.form-control {
 
 .my-page .row.content > .links > a {
     display: inline-block;
-    padding: 20px 45px;
+    padding: 10px 21px;
     text-align: center;
 }
 
@@ -933,9 +946,9 @@ input.form-control {
 }
 
 .my-page .row.content > .links > a > label {
-    font-size: 24px;
+    font-size: 12pt;
     color: #5da6d9;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 .my-page .row.content > .ci {
