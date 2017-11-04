@@ -732,9 +732,9 @@ input.form-control {
 
 .index .row.ci {
     text-align: center;
-    position: fixed;
-    bottom: 5%;
+    position: absolute;
     width: 100%;
+    bottom: 5%;
 }
 
 /* 로그인 */
@@ -750,15 +750,20 @@ input.form-control {
 }
 
 .login .row.title {
-    margin-top: 25%;
+    top: 10%;
     font-size: 27pt;
     text-align: center;
     color: #ffffff;
     font-weight: normal;
+    position: relative;
+}
+
+.login .login-form {
+    top: 10%;
+    position: relative;
 }
 
 .login .row.control {
-    margin-top: 25px;
     padding: 0 25px;
     border: 0;
     box-shadow: none;
@@ -825,7 +830,7 @@ input.form-control {
 }
 
 .login .row.buttons {
-    margin-top: 50px;
+    margin-top: 10%;
     text-align: center;
     padding: 0 25px;
 }
@@ -862,9 +867,16 @@ input.form-control {
 
 .login .row.ci {
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 5%;
     width: 100%;
+}
+
+@media (min-width: 450px) {
+    .login .row.ci {
+        position: relative;
+        top: 20%;
+    }
 }
 
 /* 마이페이지 */
