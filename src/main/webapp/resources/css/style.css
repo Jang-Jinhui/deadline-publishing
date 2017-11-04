@@ -16,6 +16,10 @@ label {
     font-weight: normal;
 }
 
+.mt20 {
+    margin-top: 20px;
+}
+
 /*first child of #page-content so it doesn't shift around*/
 .no-margin-top {
     margin-top: 0px !important
@@ -176,11 +180,9 @@ input.form-control[type=checkbox] {
     }
 
     .navbar-header .back, .navbar-header .expansion {
-        padding: 0;
-        height: 75px;
-        line-height: 75px;
-        font-size: 28px;
+        padding: 7px 0px !important;
         min-width: 0;
+        font-size: 14pt;
     }
 
     .navbar-header .expansion {
