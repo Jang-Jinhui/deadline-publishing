@@ -1002,7 +1002,7 @@ input.form-control {
     font-weight: normal;
     border-bottom: 1px solid #D2D2D2;
     line-height: 1.5em;
-    font-size: 22px;
+    font-size: 13pt;
     margin: 0;
     padding: 7px 10px 7px 15px;
     position: relative;
@@ -1090,6 +1090,10 @@ input.form-control {
 /* 인증*/
 .verify .row {
     border-bottom: 1px solid gray;
+}
+
+.verify .row.panel-content {
+    padding: 1.5em 2em;
 }
 
 .verify .row:last-child {
