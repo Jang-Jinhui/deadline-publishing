@@ -188,6 +188,7 @@ input.form-control[type=checkbox] {
     .navbar-header .expansion {
         position: absolute;
         right: 15px;
+        line-height: 21pt;
     }
 
     #slide-nav .container {
@@ -293,8 +294,7 @@ input.form-control[type=checkbox] {
 
 .modal-header .modal-title {
     font-weight: bold;
-    line-height: 2em;
-    font-size: 24px;
+    font-size: 18pt;
 }
 
 /* control */
@@ -1210,7 +1210,7 @@ input.form-control {
 /* 환자 - 환자 BEL */
 
 .sufferer-info-bel .lists {
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .sufferer-info-bel .lists > ul {
@@ -1221,7 +1221,7 @@ input.form-control {
 
 .sufferer-info-bel .lists > ul > li {
     display: flex;
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 1px dotted #d3d3d3;
     align-content: center;
 }
@@ -1231,7 +1231,7 @@ input.form-control {
 }
 
 .sufferer-info-bel .lists > ul > li .number {
-    width: 90px;
+    width: 3em;
     text-align: center;
 }
 
@@ -1241,23 +1241,23 @@ input.form-control {
 }
 
 .sufferer-info-bel .lists > ul > li .buttons > .btn {
-    font-size: 12px;
+    font-size: 6pt;
     padding: 2px 5px !important;
     min-width: 0;
     line-height: normal;
 }
 
 .sufferer-info-bel .lists > ul li > span {
-    font-size: 18px;
+    font-size: 11pt;
 }
 
 .sufferer-info-bel-dialog .align {
-    padding: 40px 0;
+    padding: 1.2em 0;
     justify-content: center;
 }
 
 .sufferer-info-bel-dialog .align label {
-    width: 100px;
+    width: 4em;
 }
 
 .sufferer-info-bel-dialog .modal-footer {
