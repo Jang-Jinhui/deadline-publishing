@@ -160,8 +160,8 @@ input.form-control {
 }
 
 input.form-control[type=checkbox] {
-    width: 24px;
-    height: 24px;
+    width: 11pt;
+    height: 11pt;
     padding: 0;
     margin: 0;
     border: 1px solid black;
@@ -192,13 +192,14 @@ input.form-control[type=checkbox] {
     }
 
     #slide-nav .container {
-        margin: 0;
+        margin: 4px 0 0;
         padding: 0 !important;
     }
 
     #slide-nav .navbar-header {
         margin: 0 auto;
         padding: 0 15px;
+        height: 46px;
     }
 
     #slide-nav .navbar.slide-active {
@@ -1262,8 +1263,4 @@ input.form-control {
 
 .sufferer-info-bel-dialog .modal-footer {
     text-align: center;
-}
-
-.container.gateway {
-    margin-top: 25px;
 }
