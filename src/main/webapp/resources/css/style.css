@@ -487,15 +487,15 @@ input.form-control {
 }
 
 .sufferer-list-item > .character > .photo {
-    width: 122px;
-    height: 122px;
+    width: 90px;
+    height: 90px;
     border: 1px solid #e7e7e7;
 }
 
 .sufferer-list-item > .character > .alarm {
-    margin-top: 18px;
+    margin-top: 1em;
     text-align: center;
-    font-size: 18px;
+    font-size: 11pt;
 }
 
 .sufferer-list-item > .character > .alarm > .number {
@@ -504,30 +504,30 @@ input.form-control {
 }
 
 .sufferer-list-item > .character > .status {
-    font-size: 18px;
-    margin: 18px auto 0;
-    padding: 6px;
-    border-radius: 6px;
-    line-height: 26px;
+    font-size: 11pt;
+    margin: 1em auto 0;
+    padding: 0px 5px;
+    border-radius: 5px;
+    line-height: 21pt;
 }
 
 .sufferer-list-item .items {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 1.5em;
     padding: 0;
     flex-grow: 1;
 }
 
 .sufferer-list-item .items li {
     display: block;
-    font-size: 22px;
-    line-height: 44px;
-    height: 45px;
+    font-size: 11pt;
+    line-height: 25pt;
+    height: 25pt;
     border-bottom: 1px solid #e1e1e1;
 }
 
 .sufferer-list-item .items li > .dt {
-    padding-left: 30px;
-    width: 100px;
+    padding-left: 1.5em;
+    width: 5em;
     position: relative;
 }
 
@@ -546,7 +546,7 @@ input.form-control {
 }
 
 .sufferer-list-item .items li > .dd {
-    margin-left: 30px;
+    margin-left: 1.1em;
     color: #7b7b7b;
 }
 
@@ -561,8 +561,8 @@ input.form-control {
 }
 
 .sufferer-show-item .character > .photo {
-    width: 122px;
-    height: 122px;
+    width: 90px;
+    height: 90px;
     border: 1px solid #e7e7e7;
 }
 
@@ -1130,7 +1130,7 @@ input.form-control {
 
 .sufferer-list .row {
     border-bottom: 2px solid #b0b0b0;
-    padding: 45px 50px;
+    padding: 20px;
 }
 
 /* 환자 상세정보 */
