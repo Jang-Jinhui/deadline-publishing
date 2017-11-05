@@ -334,10 +334,10 @@ input.form-control[type=checkbox] {
 /* component - select */
 select.form-control {
     border-radius: unset;
-    font-size: 16px;
+    font-size: 10pt;
     width: auto;
     margin-left: 10px;
-    height: 40px;
+    height: 20pt;
 }
 
 input.form-control {
@@ -704,11 +704,11 @@ input.form-control {
 }
 
 .align .flex button {
-    height: 27px;
+    height: 20pt;
 }
 
 .align .flex select {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 /* 메인 */
@@ -1067,20 +1067,20 @@ input.form-control {
 /* 사용자 정보 */
 .user-info .row {
     border-bottom: 1px dotted #d3d3d3;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .user-info .row label {
-    font-size: 22px;
+    font-size: 11pt;
     font-weight: normal;
-    line-height: 40px;
+    line-height: 21pt;
     float: left;
     display: inline-flex;
-    width: 135px;
+    width: 6.5em;
 }
 
 .user-info .row:first-child {
-    margin-top: 20px;
+    margin-top: 10px 20px;
 }
 
 .user-info .row:last-child {
