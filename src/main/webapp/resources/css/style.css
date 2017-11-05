@@ -567,7 +567,7 @@ input.form-control {
 }
 
 .sufferer-show-item .items {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 1.5em;
     padding: 0;
     flex-grow: 1;
     list-style: none;
@@ -575,14 +575,14 @@ input.form-control {
 
 .sufferer-show-item .items li {
     display: block;
-    font-size: 22px;
-    line-height: 40px;
-    height: 41px;
+    font-size: 11pt;
+    line-height: 21pt;
+    height: 21pt;
 }
 
 .sufferer-show-item .items li > .dt {
     position: relative;
-    width: 55px;
+    width: 3em;
 }
 
 .sufferer-show-item .items li > .dt::after {
@@ -1135,7 +1135,7 @@ input.form-control {
 
 /* 환자 상세정보 */
 .sufferer-show .row {
-    padding: 30px 40px;
+    padding: 20px;
     border-bottom: 1px solid #cacaca;
 }
 
@@ -1145,14 +1145,14 @@ input.form-control {
 
 .sufferer-show-info .items {
     list-style: none;
-    padding: 0;
+    padding: 0 10px;
 }
 
 .sufferer-show-info .items li a {
     display: block;
-    padding-left: 110px;
-    font-size: 22px;
-    line-height: 62px;
+    padding-left: 5em;
+    font-size: 11pt;
+    line-height: 33pt;
     position: relative;
     color: #545454;
     text-decoration: none;
@@ -1162,27 +1162,27 @@ input.form-control {
     content: "";
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 8px;
     left: 0;
     background: url("../images/icon_sufferer_items.jpg") no-repeat 0 0;
-    height: 62px;
-    width: 62px;
+    height: 31px;
+    width: 31px;
 }
 
 .sufferer-show-info .items li.user a::before {
-    background-position-x: -248px;
-}
-
-.sufferer-show-info .items li.ble a::before {
-    background-position-x: -186px;
-}
-
-.sufferer-show-info .items li.diaper a::before {
     background-position-x: -124px;
 }
 
-.sufferer-show-info .items li.prediction a::before {
+.sufferer-show-info .items li.ble a::before {
+    background-position-x: -93px;
+}
+
+.sufferer-show-info .items li.diaper a::before {
     background-position-x: -62px;
+}
+
+.sufferer-show-info .items li.prediction a::before {
+    background-position-x: -31px;
 }
 
 .sufferer-show-info .items li.record a::before {
