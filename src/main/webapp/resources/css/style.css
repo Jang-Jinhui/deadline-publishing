@@ -600,6 +600,17 @@ input.form-control {
     display: flex;
 }
 
+.sufferer-info-item .radio-inline + .radio-inline {
+    margin-left: 20px;
+}
+
+.sufferer-info-item .radio-inline {
+    padding-left: 20px;
+    width: auto !important;
+    line-height: 27px;
+    font-size: 11pt;
+}
+
 .sufferer-info-item .character {
     display: flex;
     flex-direction: row;
@@ -607,13 +618,13 @@ input.form-control {
 }
 
 .sufferer-info-item .character > .photo {
-    width: 122px;
-    height: 122px;
+    width: 90px;
+    height: 90px;
     border: 1px solid #e7e7e7;
 }
 
 .sufferer-info-item .items {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 20px;
     padding: 0;
     flex-grow: 1;
     list-style: none;
@@ -622,24 +633,25 @@ input.form-control {
 .sufferer-info-item .items li {
     display: flex;
     font-size: 22px;
-    line-height: 40px;
-    height: 41px;
+    line-height: 21pt;
+    height: 21pt;
     align-items: center;
     align-content: center;
+    margin-top: 5px;
 }
 
 .sufferer-info-item .items li > .dt {
     position: relative;
-    width: 55px;
-    line-height: 34px;
-    height: 34px;
+    width: 2em;
+    line-height: 21pt;
+    height: 21pt;
     margin-bottom: 0;
+    font-size: 11pt;
 }
 
 .sufferer-info-item .items li > .dd {
     margin-left: 10px;
     color: #7b7b7b;
-    height: 34px;
     width: 70%;
 }
 
@@ -1178,7 +1190,7 @@ input.form-control {
 
 /* 환자 정보보기 */
 .sufferer-info .row {
-    padding: 30px 40px;
+    padding: 10px 20px;
     border-bottom: 1px solid #cacaca;
 }
 
@@ -1187,7 +1199,7 @@ input.form-control {
 }
 
 .sufferer-info .group > .row {
-    padding: 20px 40px;
+    padding: 10px 20px;
     border-bottom: 1px dotted #d3d3d3;
 }
 
