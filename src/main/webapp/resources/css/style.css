@@ -487,9 +487,10 @@ input.form-control {
 }
 
 .sufferer-list-item > .character > .photo {
-    width: 90px;
-    height: 90px;
+    width: 50pt;
+    height: 50pt;
     border: 1px solid #e7e7e7;
+    clip-path: circle(50%);
 }
 
 .sufferer-list-item > .character > .alarm {
@@ -505,7 +506,7 @@ input.form-control {
 
 .sufferer-list-item > .character > .status {
     font-size: 11pt;
-    margin: 1em auto 0;
+    margin: 0.5em auto 0;
     padding: 0px 5px;
     border-radius: 5px;
     line-height: 21pt;
@@ -1135,7 +1136,7 @@ input.form-control {
 }
 
 .sufferer-list .row {
-    border-bottom: 2px solid #b0b0b0;
+    border-bottom: 1px solid #b0b0b0;
     padding: 20px;
 }
 
