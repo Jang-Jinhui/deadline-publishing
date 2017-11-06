@@ -730,7 +730,7 @@ input.form-control {
     text-align: center;
     color: #ffffff;
     font-weight: 300;
-    top:10%;
+    top: 10%;
 }
 
 .index .row.user {
@@ -803,6 +803,7 @@ input.form-control {
     margin-top: 25px;
     font-size: 9pt;
 }
+
 @media (max-width: 320px) {
     .login .row.control .options {
         font-size: 7pt;
@@ -1081,7 +1082,7 @@ input.form-control {
 }
 
 .user-info .row:first-child {
-    margin-top: 10px 20px;
+    margin-top: 10px;
 }
 
 .user-info .row:last-child {
@@ -1268,4 +1269,25 @@ input.form-control {
 
 .sufferer-info-bel-dialog .modal-footer {
     text-align: center;
+}
+
+.gateway .items {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.gateway .items li {
+    font-size: 11pt;
+    padding: 10pt 5pt;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.gateway .items li:last-child {
+    border-bottom: 2px solid #cacaca;
+}
+
+.gateway .items input.form-control[type=checkbox] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5pt;
 }
