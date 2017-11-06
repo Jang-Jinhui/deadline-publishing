@@ -551,6 +551,14 @@ input.form-control {
     color: #7b7b7b;
 }
 
+.sufferer-list-item {
+    margin-bottom: 10px;
+}
+
+.sufferer-list-item .checkbox-inline input[type=checkbox] {
+    top: 5px;
+}
+
 /* component - sufferer-show */
 .sufferer-show-item {
     display: flex;
@@ -607,6 +615,17 @@ input.form-control {
 }
 
 .sufferer-info-item .radio-inline {
+    padding-left: 20px;
+    width: auto !important;
+    line-height: 27px;
+    font-size: 11pt;
+}
+
+.sufferer-info-item .checkbox-inline + .checkbox-inline {
+    margin-left: 20px;
+}
+
+.sufferer-info-item .checkbox-inline {
     padding-left: 20px;
     width: auto !important;
     line-height: 27px;
@@ -1334,3 +1353,8 @@ input.form-control {
     display: inherit;
 }
 
+/* 보호자 */
+.protector-list .row {
+    border-bottom: 1px solid #b0b0b0;
+    padding: 20px;
+}
